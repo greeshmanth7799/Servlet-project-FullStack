@@ -1,0 +1,14 @@
+
+<div class="dashboard">
+  <section class="card">
+    <h1>Employee Dashboard</h1>
+    <p>{{ message }}</p>
+
+    @if (name) {
+      <h2>Welcome, {{ name }}!</h2>
+      <p>Email: {{ email }}</p>
+      <p>You are logged in successfully.</p>
+      <button type="button" (click)="logout()">Logout</button>
+    }
+  </section>
+</div>
